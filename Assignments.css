@@ -1,0 +1,174 @@
+
+.assignments-page {
+  width: 100%;
+}
+
+.assignment-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  margin-bottom: 25px;
+}
+
+.assignment-stat {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 3px 15px rgba(60, 100, 140, 0.04);
+}
+
+.assignment-stat span {
+  color: #91a5b5;
+  font-size: 12px;
+}
+
+.assignment-stat h2 {
+  color: #426d8e;
+  font-size: 26px;
+  margin: 12px 0 0;
+}
+
+.assignments-container {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.assignment-controls,
+.announcement-controls,
+.books-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.assignment-controls input,
+.assignment-controls select,
+.announcement-controls input,
+.announcement-controls select,
+.books-controls input,
+.books-controls select {
+  height: 44px;
+  border: 1px solid #e0eaf2;
+  border-radius: 9px;
+  padding: 0 13px;
+  background: #fbfdff;
+  color: #52718b;
+  outline: none;
+  min-width: 0;
+}
+
+.assignment-controls input,
+.announcement-controls input,
+.books-controls input {
+  flex: 1;
+}
+
+.assignment-controls select,
+.announcement-controls select,
+.books-controls select {
+  min-width: 165px;
+}
+
+.assignment-controls input:focus,
+.assignment-controls select:focus,
+.announcement-controls input:focus,
+.announcement-controls select:focus,
+.books-controls input:focus,
+.books-controls select:focus {
+  border-color: #91c3e8;
+}
+
+.assignment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 19px 0;
+  border-bottom: 1px solid #edf2f6;
+}
+
+.assignment-info h3 {
+  color: #456780;
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.assignment-info p {
+  color: #8ba1b3;
+  font-size: 12px;
+  margin: 0 0 7px;
+}
+
+.assignment-info small {
+  color: #a2b1bd;
+  font-size: 11px;
+}
+
+.assignment-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.assignment-status {
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 10px;
+  white-space: nowrap;
+  background: #fff1df;
+  color: #bd8c4f;
+}
+
+.assignment-status.completed {
+  background: #e5f5ec;
+  color: #438b61;
+}
+
+.assignment-status.in-progress {
+  background: #e6f1ff;
+  color: #4f85b7;
+}
+
+.assignment-button {
+  border: none;
+  background: #eaf4ff;
+  color: #4b83ac;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.assignment-button:hover {
+  background: #dceeff;
+}
+
+@media (max-width: 650px) {
+  .assignment-summary {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .assignments-container {
+    padding: 16px;
+  }
+
+  .assignment-controls {
+    flex-direction: column;
+  }
+
+  .assignment-controls select {
+    width: 100%;
+  }
+
+  .assignment-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .assignment-actions {
+    width: 100%;
+  }
+}

@@ -1,0 +1,100 @@
+
+.schedule-page {
+  width: 100%;
+}
+
+.schedule-section {
+  background: white;
+  padding: 23px;
+  border-radius: 16px;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.schedule-day {
+  min-width: 0;
+  background: #f8fbfe;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.schedule-day-header {
+  background: #dceeff;
+  padding: 14px 5px;
+  text-align: center;
+  color: #416e91;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.schedule-day-content {
+  padding: 9px;
+  min-height: 190px;
+}
+
+.schedule-course {
+  background: white;
+  border: 1px solid #e4eef6;
+  border-left: 3px solid #91c3e8;
+  border-radius: 8px;
+  padding: 12px 9px;
+  margin-bottom: 10px;
+}
+
+.schedule-course-time {
+  color: #5d94bb;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.schedule-course h3 {
+  font-size: 12px;
+  color: #476780;
+  line-height: 1.5;
+  margin: 10px 0 5px;
+}
+
+.schedule-course p,
+.schedule-course small {
+  color: #93a7b7;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.schedule-course-location {
+  color: #7794a9;
+  font-size: 10px;
+  margin: 8px 0;
+}
+
+.schedule-empty {
+  text-align: center;
+  color: #b0bdc8;
+  font-size: 11px;
+  padding-top: 35px;
+}
+
+@media (max-width: 1050px) {
+  .schedule-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-section {
+    padding: 14px;
+  }
+
+  .schedule-day-content {
+    min-height: auto;
+  }
+}
+
